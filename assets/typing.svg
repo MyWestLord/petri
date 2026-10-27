@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="60" viewBox="0 0 820 60">
+  <style>
+    .l{font:700 26px 'JetBrains Mono','Fira Code',Consolas,monospace;fill:#ff5fa8;opacity:0;clip-path:inset(0 100% 0 0);animation:type 12s steps(40,end) infinite}
+    .l2{fill:#3ef0ff;animation-delay:3s}.l3{fill:#ffd23f;animation-delay:6s}.l4{fill:#8dff5a;animation-delay:9s}
+    @keyframes type{0%{opacity:1;clip-path:inset(0 100% 0 0)}12%{clip-path:inset(0 0 0 0)}22%{opacity:1;clip-path:inset(0 0 0 0)}25%,100%{opacity:0}}
+    .cur{fill:#fff;animation:blink .8s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+  </style>
+  <text class="l" x="410" y="38" text-anchor="middle">&gt; 800,000 neurons. 0 emotions.</text>
+  <text class="l l2" x="410" y="38" text-anchor="middle">&gt; touch a rug → get electrocuted ⚡</text>
+  <text class="l l3" x="410" y="38" text-anchor="middle">&gt; it never forgets a dev. ever.</text>
+  <text class="l l4" x="410" y="38" text-anchor="middle">&gt; 8/8 regions fired → SPIKE → BUY</text>
+</svg>

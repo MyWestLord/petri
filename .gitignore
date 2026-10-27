@@ -1,0 +1,6 @@
+.env
+config.yaml
+*.sqlite
+__pycache__/
+.venv/
+.pytest_cache/

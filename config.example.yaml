@@ -1,0 +1,19 @@
+# PETRI config — copy to config.yaml
+rpc_url: https://api.mainnet-beta.solana.com   # use a private RPC (Helius / Triton / QuickNode) for real speed
+live: false                                    # paper trading. flip only with a BURNER wallet.
+db_path: petri_memory.sqlite                   # hippocampus: rugger memory, survives restarts
+
+thresholds:            # amygdala sensitivity — one veto = ZAP
+  max_bundle_pct: 15     # % supply bought by linked wallets in the launch window
+  max_sniper_pct: 12     # % supply sniped in ~block 0
+  max_top10_pct: 35      # top-10 holders (excl. curve/AMM)
+  max_cluster_pct: 20    # bubblemaps-style funder cluster
+  min_organic_kols: 2
+  min_curve_pct: 8
+  max_curve_pct: 92
+
+exits:                 # cerebellum
+  size_sol: 1.5
+  tp_ladder: [[1.0, 0.4], [3.0, 0.4]]   # +100% sell 40%, +300% sell 40%
+  trailing_runner_pct: 20
+  stop_loss_pct: 35
